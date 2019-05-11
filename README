@@ -1,0 +1,8 @@
+A basic JS framework, to put the "polish" on Custom Elements.
+
+Usage:
+In main.js, import all your Polish classes and call Polish.Register([class1,class2,...]);
+
+Your classes should extend Polish(<class>, <name>): <class> being the HTML class (ex HTMLBodyElement) or tag name, <name> being the name you want for the element (prefixed with polish-).  Both are optional, first defaults to a plain HTML Element, second defaults to auto IDs (useful if you're creating everything dynamically).
+
+You get a Create function on your class, creates the element.  No need to remember (or even know) what the tag name was, or change every createElement statment if you decide to change the base class.
